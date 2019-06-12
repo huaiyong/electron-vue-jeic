@@ -232,21 +232,6 @@ export default {
           fixed: 'right',
           render: (h, params) => {
             return h('div', [
-              // h('Button', {
-              //   props: {
-              //     type: 'primary',
-              //     size: 'small',
-              //     icon: 'ios-list-outline',
-              //   },
-              //   attrs: {
-              //     title: '查看进出明细',
-              //   },
-              //   on: {
-              //     click: () => {
-              //       this.direct(params.row);
-              //     },
-              //   },
-              // }),
               h('Button', {
                 props: {
                   type: 'primary',
@@ -440,15 +425,7 @@ export default {
         }
       });
     },
-    // 跳转
-    // direct(row) {
-    //   this.$router.push({
-    //     path: '/detailList',
-    //     query: {
-    //       goods_id: row.id,
-    //     },
-    //   });
-    // },
+
     // 编辑
     edit(row) {
       this.$refs.formVali.resetFields();
